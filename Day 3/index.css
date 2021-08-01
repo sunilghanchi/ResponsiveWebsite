@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .hero{
+     height: 100vh; 
+     width: 100%;
+     background-image: url(image.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+ .logo{
+     color: white;
+     font-size: 35px;
+     letter-spacing: 1px;
+     cursor: pointer;
+ }
+ span{
+     color: hsl(187, 94%, 51%);
+ }
+ .nav{ 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 45px;
+     padding-left: 8%;
+     padding-right: 8%;
+ }
+ 
+ ul li{
+     display: inline-block;
+     padding: 10px 30px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 20px;
+ }
+ 
+ ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ ul li a:hover{
+     color: hsl(187, 94%, 51%);
+ }
+ .btn{
+     background-color: hsl(187, 94%, 51%);
+     color: white;
+     text-decoration: none;
+     border: 2px solid transparent;
+     font-weight: bold;
+     padding: 10px 25px;
+     border-radius: 30px;
+     transition: transform .6s;
+ }
+ .btn:hover{
+     transform: scale(1.1);
+ }
+ .content{
+     position: absolute;
+     top: 50%;
+     left: 8%;
+ }
+ h1{
+     color: white;
+     margin: 20px 0 20px;
+     font-size: 70px;
+ }
+ h3{
+     color: white;
+     font-size: 25px;
+     margin-bottom: 50px;
+ }
+ h4{
+     color: rgb(209, 202, 202);
+     font-size: 20px;
+     letter-spacing: 2px;
+ }
+ .newsletter form{
+     width: 400px;
+     max-width: 100%;
+     position: absolute;
+     top: 85%;
+ }
+ .newsletter form input:first-child {
+   width: 100%;
+   display: inline-block;
+   padding: 14px 130px 14px 15px;
+   border: 2px solid hsl(187, 94%, 51%);
+   border-radius: 30px;
+ }
+ .newsletter form input:last-child {
+     position: absolute;
+     display: inline-block;
+     border: none;
+     border-radius: 30px;
+     padding: 10px 30px;
+     background-color: hsl(187, 94%, 51%);
+     color: white;
+     top: 6px;
+     right: 6px;
+ }
+
+ .wraper {
+     color: white;
+     position: absolute;
+     top: 40%;
+     left: 87.5%;
+     transform: translate(-50%,-50%);
+ }    
+
+ ul li.facebook, .twitter, .instagram, .youtube, .whatsapp {
+     list-style: none ;
+     display: flex;
+     flex-direction: column;
+ }
+
+ ul li.facebook a:hover{
+     color: white;
+     text-decoration: underline;
+}
+ul li.twitter a:hover{
+    color: white;
+    text-decoration: underline;
+}
+ul li.instagram a:hover{
+    color: white;
+    text-decoration: underline;
+}
+ul li.youtube a:hover{
+    color: white;
+    text-decoration: underline;
+}
+ul li.whatsapp a:hover{
+    color: white;
+    text-decoration: underline;
+}
+ 
+
+ ul li.facebook, .twitter, .instagram, .youtube, .whatsapp {
+     width: 50px;
+     height: 50px;
+     position: relative;
+     background: #e59500;
+     margin: 10px 0;
+     border-radius: 3px;
+     cursor: pointer;
+     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ }
+
+ ul li .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+     font-size: 25px;
+ }
+
+ ul li.facebook {
+     background: #3b5999;
+ }
+ ul li.twitter {
+     background: #55acee;
+ }
+ ul li.instagram {
+     background: #e4405f
+ }
+ ul li.youtube {
+     background: #CD201F
+ }
+ ul li.whatsapp {
+     background: #25D366
+ }
+
+ .slider {
+     position: absolute;
+     top: 0;
+     right: 55px;
+     height: 50px;
+     width: 0px;
+     background: #eebb5c;
+     text-align: center;
+     line-height: 50px;
+     border-radius: 3px;
+     transition: all 0.5s 0.3s ease;
+ }
+
+ .slider p{
+     text-transform: uppercase;
+     font-size: 16px;
+     font-weight: 900;
+     opacity: 0;
+     transition: all 0.5s ease;
+ }
+
+ul li.facebook div.slider{
+    background: #627aac;
+}
+ul li.twitter div.slider{
+    background: #7fd5f6;
+}
+ul li.instagram div.slider{
+    background: #dd94c6;
+}
+ul li.youtube div.slider{
+    background: #eea59c;
+}
+ul li.whatsapp div.slider{
+    background: #82d47e;
+}
+
+ul li:hover .slider{
+    width:200px;
+    transition: all 0.5s ease; 
+ }
+ul li:hover .slider p{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
